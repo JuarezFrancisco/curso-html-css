@@ -1,0 +1,32 @@
+@charset "utf-8"
+/* 
+      "id" em HTML = CSS é "#" pode ter 1 com mesmo id por HTML
+      "class" em HTML = CSS é "." pode ter varios com mesma class no HTML 
+      Também poder ter 2 class ou mais na mesma tag
+*/
+
+body{
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif
+}
+h1{
+    color: rgb(4, 109, 0);
+}
+h1#principal{
+    text-align: center;
+    background-color: green;
+    color: white;
+    
+}
+ h2{
+    color: rgb(51, 77, 49);
+ }
+ .basico {
+    color: green;
+ }
+ .intermediario {
+    color: yellowgreen;
+ }
+ .avancado {
+    color: red;
+ }

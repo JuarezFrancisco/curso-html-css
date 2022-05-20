@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir este site em varios dispositivos ou siplesmente aumente a tela do navegador</p>
+    <picture>
+      <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+      <img src="imagens/foto-g.png" alt="Imagem flexivel">        
+    </picture>
+    <!--tag source neste caso quando atingir o maximo da largura(width) ela muda para a imagem maior tem que estar dntro da tag "picture"-->
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <h2>primeiro maneira no código</h2>
+    <audio src="midias/exemplo-audio1.mp3" autoplay controls></audio>
+    <h2>segunda maneira no código</h2>
+    <audio preload="metadata" controls>
+      <source src="midias/exemplo-audio1.mp3" type="audio/mpeg">
+      <source src="midias/exemplo-audio1.ogg" type="audio/ogg">
+      <source src="midias/exemplo-audio1.mp3" type="audio/wav">
+    </audio>
+    <!--na tag "source" eu coloquei mais 2 tipos de arquivos de audio que poderiam ser add também, eu add eles só para ver o "type" de cada-->
+    <!--Esxiste o outoplay mas tem navegadores que não funcionanm direito por isso foi colocada o comando "Controls"-->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando Videos</title>
+</head>
+<body>
+    <h1>Adicionando videos hospedados local</h1>
+    <p>Este video está hospedado em meu próprio servidor</p>
+    <p>Jeito Simples no código</p>
+    <video src="midias/video-site.mp4" width="560" controls></video>
+    <p>Jeito mais completo com varios formatos para ter compatibilidade com varios navegadores</p>
+    <video width="560" poster="imagens/capa-mirassol.jpg" controls>
+        <source src="midias/video-site.ogv" type="video/ogg">
+        <source src="midias/video-site.mp4" type="video/mp4">
+        <source src="midias/video-site.m4v" type="video/mp4">
+        <source src="midias/video-site.webm" type="video/webn">
+        <p>Seu navegador não tem compatibilidade com a reprodução do video</p>
+    </video>
+    <h1>Inserindo videos de outros serviços que não são hospedados no site</h1>    
+    <p>Videos do youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xW6KMRCyF4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Videos do site Vimeo</p>
+    <iframe src="https://player.vimeo.com/video/680668269?h=ce45053c2c" width="560" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+   </body>
+</html>

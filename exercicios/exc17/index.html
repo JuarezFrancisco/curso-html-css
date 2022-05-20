@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        h1,h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* 
+        Medidas Absolutas
+        cm, mm, in, px, pt, pc
+
+        Medidas Ralativas
+        em, ex, rem, vw, vh, %
+
+        recomendada px ou em
+        Lembrando 1em = 16px
+                  2em = 32px
+                  1.5em = 24px
+        */
+        /*
+        shorthand seguir esta ordem para não precisar declarar uma por ua
+        font-style -> font-weight -> font-size -> font-family
+        declarando uma por uma
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 3em;
+        font-family: 'work Sans, sans-serif';
+        */
+                h1 {
+                 font-size: italic bolder 3em 'work Sans, sans-serif';
+                }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quisquam exercitationem ut aliquid, est a doloremque eius deserunt consequatur totam repellat. Modi aut doloremque, eius quis impedit quidem sint animi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis nulla esse accusantium eos hic consectetur accusamus enim repudiandae nemo earum eius possimus ducimus, quas, deserunt voluptatem neque voluptatum. Exercitationem, deserunt!</p>
+    <h2>Titulo 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit cum beatae cupiditate aspernatur illo aut, iure, porro eligendi natus adipisci voluptatem. Obcaecati autem deleniti molestias molestiae. Ratione, dolore ab! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quod architecto inventore alias sint facilis officia, tempore cum nam minus odit a placeat! Error omnis corporis, est explicabo quos architecto!</p>
+
+</body>
+</html>
